@@ -1,0 +1,16 @@
+{% extends 'geode-geocoding/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block js_block %}
+{{ form.media }}
+{% endblock %}
+
+{% block content_block %}
+<div class="form-group">
+{{ form.address.label }}
+</br>
+{{ form.address }}
+{{ form.render }}
+</div>
+{% endblock %}

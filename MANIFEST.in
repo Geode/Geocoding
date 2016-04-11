@@ -1,0 +1,9 @@
+include LICENSE
+include README.rst
+recursive-include geode_geocoding/static *
+recursive-include geode_geocoding/templates *
+recursive-include geode_geocoding/Arcgis *
+recursive-include geode_geocoding/Bing *
+recursive-include geode_geocoding/BXL *
+recursive-include geode_geocoding/Google *
+recursive-include geode_geocoding/OSM *
