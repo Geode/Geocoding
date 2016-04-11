@@ -1,0 +1,6 @@
+Django==1.9.4
+django-bower
+django_compressor
+requests
+django-autocomplete-light
+django-bootstrap3
