@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render
 
-from geocoding.form import GeocodingForm
-from geocoding.factories import ParserFactory
+from geode_geocoding.form import GeocodingForm
+from geode_geocoding.factories import ParserFactory
 
 from django.http import JsonResponse
 

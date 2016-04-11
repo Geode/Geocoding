@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 from django.test import TestCase
 
-from geocoding.factories import GeocoderFactory, ParserFactory
+from geode_geocoding.factories import GeocoderFactory, ParserFactory
 
-from geocoding.OSM.osm import Osm
-from geocoding.Google.google import Google
+from geode_geocoding.OSM.osm import Osm
+from geode_geocoding.Google.google import Google
 
-from geocoding.BXL.bxl import BxlParser
+from geode_geocoding.BXL.bxl import BxlParser
 
 class GeocoderTestCase(TestCase):
 

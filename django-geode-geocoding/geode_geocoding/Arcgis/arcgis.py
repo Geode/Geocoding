@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from geocoding.base import Base
+from geode_geocoding.base import Base
 
-from geocoding import IGeocode
-from geocoding import IGeocodeReverse
+from geode_geocoding import IGeocode
+from geode_geocoding import IGeocodeReverse
 
 class Arcgis(Base, IGeocode, IGeocodeReverse):
 

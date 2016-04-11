@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-from geocoding.base import Base
+from geode_geocoding.base import Base
 
-from geocoding import IGeocode
-from geocoding import IGeocodeReverse
+from geode_geocoding import IGeocode
+from geode_geocoding import IGeocodeReverse
 
-from geocoding.keys import google_key, google_client, google_client_secret
+from geode_geocoding.keys import google_key, google_client, google_client_secret
 
 class Google(Base, IGeocode, IGeocodeReverse):
 

@@ -8,13 +8,9 @@ different geosource.
 Quick start
 -----------
 
-1. Add "geocoding" to your INSTALLED_APPS setting like this::
+1. Add "geode_geocoding" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
-        'geocoding',
+        'geode_geocoding',
     ]
-
-2. Include the polls URLconf in your project urls.py like this::
-
-    url(r'^geocoding/', include('geocoding.urls')),

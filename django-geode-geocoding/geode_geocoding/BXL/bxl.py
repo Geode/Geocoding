@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import requests
 
-from geocoding.base import Parser
+from geode_geocoding.base import Parser
 
 class BxlParser(Parser):
 
