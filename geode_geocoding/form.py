@@ -6,9 +6,9 @@ from django.core.urlresolvers import reverse
 class GeocodingWidget(forms.TextInput):
     class Media:
         css = {
-                'all': ('static/css/geocoding.css',)
+                'all': ('/static/css/geocoding.css',)
             }
-        js = ('static/js/geocoding.js','typeahead.js/dist/typeahead.bundle.min.js')
+        js = ('/static/js/geocoding.js','typeahead.js/dist/typeahead.bundle.min.js')
 
 class GeocodingForm(forms.Form):
     address = forms.CharField(widget=GeocodingWidget(attrs={ 'class':'form-control typeahead','data-provide':'typeahead', 'autocomplete':'off'}))
