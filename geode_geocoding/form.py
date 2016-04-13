@@ -14,7 +14,7 @@ class GeocodingForm(forms.Form):
     address = forms.CharField(widget=GeocodingWidget(attrs={ 'class':'form-control typeahead','data-provide':'typeahead', 'autocomplete':'off'}))
 
     def render(self):
-        url = reverse('geocoding:AutocompleteAdresse')
+        url = reverse('AutocompleteAdresse')
         encapsulation = """
         <script type="text/javascript">
             showadresse("%s");

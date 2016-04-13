@@ -14,3 +14,6 @@ Quick start
         ...
         'geode_geocoding',
     ]
+
+2. Include the geode_geocoding URLconf in your project urls.py like this::
+    url(r'^geode_geocoding/', include('geode_geocoding.urls')),
