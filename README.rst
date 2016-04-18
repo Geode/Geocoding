@@ -2,7 +2,7 @@
 Geocoding
 =========
 
-Geocoding is a simple Django app to request infortmation from
+Geocoding is a simple Django app to request information from
 different geosource.
 
 Quick start
