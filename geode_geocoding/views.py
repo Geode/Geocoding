@@ -20,6 +20,6 @@ def test(request):
 
     form = GeocodingForm()
 
-    return render(request,'geocoding/geocoding.html',{
+    return render(request,'geode_geocoding/geocoding.html',{
         'form' : form,
     })
