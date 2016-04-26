@@ -10,7 +10,7 @@ class GeocodingWidget(forms.TextInput):
         css = {
                 'all': ('geode_geocoding/css/geocoding.css',)
             }
-        js = ('geode_geocoding/js/geocoding.js','typeahead.js/dist/typeahead.bundle.min.js')
+        js = ('geode_geocoding/js/geocoding.js','typeahead.js/dist/typeahead.bundle.js')
 
     def render(self, name, value, attrs=None):
         attrs = attrs or {}

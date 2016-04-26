@@ -18,7 +18,12 @@ function showadresse(url, html_elem_id){
     input.typeahead({
         minLength: 3,
         highlight: true,
-        items: 5
+        items: 5,
+        classNames: {
+            input: 'tt-input',
+            hint: 'tt-hint',
+            menu: 'tt-menu'
+         }
     },{
         name: 'address',
         display: function(data) {
@@ -26,4 +31,7 @@ function showadresse(url, html_elem_id){
         },
         source: bestAdresses
     });
+
+
+    input.parent().css('display','block');
 };
