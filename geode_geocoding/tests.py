@@ -22,6 +22,11 @@ class GeocoderTestCase(TestCase):
         bxl = parse.createParser('bxl')
         self.assertEqual(type(bxl), BxlParser)
 
+    def test_bxl_encoding(self):
+        parser = ParserFactory().createParser('bxl')
+        data = parser.getAddresses("Avenue des héliotropes 2")
+        self.assertEqual(data['result'][0]['address']['street']['name'], 'Avenue des Héliotropes')
+
     def test_osm_coder(self):
         facto = GeocoderFactory()
 

@@ -1,5 +1,5 @@
-function showadresse(url){
-    var input = $("#id_address");
+function showadresse(url, html_elem_id){
+    var input = $("#" + html_elem_id);
 
     var bestAdresses = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
@@ -18,7 +18,12 @@ function showadresse(url){
     input.typeahead({
         minLength: 3,
         highlight: true,
-        items: 5
+        items: 5,
+        classNames: {
+            input: 'tt-input',
+            hint: 'tt-hint',
+            menu: 'tt-menu'
+         }
     },{
         name: 'address',
         display: function(data) {
@@ -26,4 +31,7 @@ function showadresse(url){
         },
         source: bestAdresses
     });
+
+
+    input.parent().css('display','block');
 };
