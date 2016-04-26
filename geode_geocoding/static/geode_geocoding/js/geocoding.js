@@ -1,5 +1,5 @@
-function showadresse(url){
-    var input = $("#id_address");
+function showadresse(url, html_elem_id){
+    var input = $("#" + html_elem_id);
 
     var bestAdresses = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
