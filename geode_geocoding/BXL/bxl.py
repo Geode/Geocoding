@@ -15,6 +15,7 @@ class BxlParser(Parser):
         self.option['address'] = query
         r = requests.get(self.url, params = self.option)
         if r.status_code == 200:
+            r.encoding = 'utf-8'
             self.result = r.json()
             return self.result
         else :
